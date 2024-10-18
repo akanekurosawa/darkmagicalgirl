@@ -1,7 +1,4 @@
--- Copyright (c) 2021-2022 tiagovla
--- License: MIT
---
-local p = require("tokyodark.palette")
+local p = require("darkmagicalgirl.palette")
 local colors = {
     bg = p.bg1,
     fg = p.fg,
@@ -14,7 +11,7 @@ local colors = {
     grey = p.grey,
 }
 
-local tokyo_dark = {
+local dark_magical_girl = {
     inactive = {
         a = { fg = colors.grey, bg = colors.bg, gui = "bold" },
         b = { fg = colors.grey, bg = colors.bg },
@@ -44,6 +41,6 @@ function mt:__index(k)
     end
 end
 
-tokyo_dark = setmetatable(tokyo_dark, mt)
+dark_magical_girl = setmetatable(dark_magical_girl, mt)
 
-return tokyo_dark
+return dark_magical_girl
