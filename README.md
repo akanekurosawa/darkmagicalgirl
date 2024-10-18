@@ -1,15 +1,12 @@
-![tokyodark.nvim](https://user-images.githubusercontent.com/30515389/141231977-82476546-eb48-47e4-a5fc-45ace7eacb0d.png)
+# DISCLAIMER
 
-![image](https://user-images.githubusercontent.com/30515389/115807570-42385080-a3bf-11eb-8286-c981b5093ffa.png)
+**IF YOU'RE READING THIS, THIS IS JUST A RENAMED COPY OF THE ORIGINAL FORK. USE THAT ONE INSTEAD!**
 
 ### About
 
-A clean dark theme written in lua for neovim (0.7.2 or older).
+A mildly modified, delightfully dark fork of tokyodark.nvim inspired by Sailor Moon and the Star Guardians.
 
 ### Features
-
-- Support for numerous plugins
-- Customizable
 
 ### Installation
 
@@ -19,13 +16,15 @@ Install with your favorite package manager:
 
 ``` lua
 {
-    "tiagovla/tokyodark.nvim",
+    "akanekurosawa/darkmagicalgirl",
+    lazy = false,
+    priority = 1000,
     opts = {
         -- custom options here
     },
     config = function(_, opts)
-        require("tokyodark").setup(opts) -- calling setup is optional
-        vim.cmd [[colorscheme tokyodark]]
+        require("darkmagicalgirl").setup(opts) -- calling setup is optional
+        vim.cmd [[colorscheme darkmagicalgirl]]
     end,
 }
 ```
@@ -51,5 +50,6 @@ local default_config = {
 
 ### Inspiration
 
+- [tokyodark.nvim](https://github.com/tiagovla/tokyodark.nvim)
 - [tokyonight-vim](https://github.com/ghifarit53/tokyonight-vim)
 - [tokyo-night-vscode-theme](https://github.com/enkia/tokyo-night-vscode-theme)
